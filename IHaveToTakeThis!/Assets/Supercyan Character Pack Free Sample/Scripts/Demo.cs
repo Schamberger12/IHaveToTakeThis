@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Demo : MonoBehaviour {
 
-    private readonly string[] m_animations = { "Pickup","Wave" };
+    private readonly string[] m_animations = { "AnswerPhoneStanding", "AnswerPhoneWalking", "HangupPhoneWalking", "HangupPhoneStanding" };
+    //private readonly string[] m_animations = { "Pickup", "Wave" };
     private Animator[] m_animators;
     [SerializeField] private CameraLogic m_cameraLogic;
 

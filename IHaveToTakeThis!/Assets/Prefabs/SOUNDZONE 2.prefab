@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 579768102751451935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 2.704}
   m_Children: []
   m_Father: {fileID: 579768103336144674}
   m_RootOrder: 0
@@ -51,8 +51,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 1.01
+  MinDistance: 1.01
+  MaxDistance: 1.010001
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -234,3 +234,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
   soundLevel: 2
+  player: {fileID: 0}

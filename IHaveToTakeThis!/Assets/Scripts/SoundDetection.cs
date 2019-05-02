@@ -9,15 +9,23 @@ public class SoundDetection : MonoBehaviour
 
     public GameObject player;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
         //Assuming the player object is called "Player"
-        if (collision.gameObject == player)
+        if (other.gameObject == player)
         {
             scoreManager.SetLevel(soundLevel);
 
             Debug.Log("Collision detected");
         }
 
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == player)
+        {
+            scoreManager.SetLevel(1);
+        }
     }
 }

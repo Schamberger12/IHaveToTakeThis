@@ -5,21 +5,24 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public Text scoreText;
-    public int soundLevel;
+    private int soundLevel;
+    public AudioLevelController audioLevel;
 
-    void Start()
+    void Awake()
     {
-        soundLevel = 1;
-        scoreText.text = "Sound Level: " + soundLevel;
+        SetLevel(1);
     }
 
     public void SetLevel(int newLevel)
     {
         soundLevel = newLevel;
 
-        scoreText.text = "Sound Level: " + soundLevel;
+        audioLevel.changeLevel(newLevel);
 
+    }
 
+    public int getSoundLevel()
+    {
+        return soundLevel;
     }
 }

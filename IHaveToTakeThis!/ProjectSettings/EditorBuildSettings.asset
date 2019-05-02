@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8ccf6572ca0e1684c8407fc1ca296359
+  - enabled: 1
     path: Assets/Scenes/newHouse.unity
     guid: c0096980a8f5cc943a1faff9658cb427
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 521cff0d57b0c8440a8b8b79d991cac4
+  - enabled: 1
+    path: Assets/Scenes/PartialWinScreen.unity
+    guid: fe49957eb38245c4786a11fbdf7045e8
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 1bec37ef27a3a0241979b36a4a78c2d6
   m_configObjects: {}

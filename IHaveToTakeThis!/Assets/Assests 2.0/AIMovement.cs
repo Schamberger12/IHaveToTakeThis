@@ -4,15 +4,25 @@ using UnityEngine.AI;
 
 public class AIMovement : MonoBehaviour
 {
+
     public GameObject movementDestination1;
     public GameObject movementDestination2;
     public NavMeshAgent agent;
-    public float totalTimeToPosition = 10.0f;
+    public float totalTimeToPosition;
     public float currentTime = 0.0f;
     public bool exploredDest1 = false;
 
+
+
+    private void Start()
+    {
+        
+        totalTimeToPosition = Random.Range(3.0f, 15.0f);
+    }
+
     void Update()
     {
+
         currentTime += Time.deltaTime;
         if (currentTime > totalTimeToPosition)
         {
